@@ -25,9 +25,5 @@
   "bugs": {
     "url": "https://github.com/aquid/loopback-reset-password-mixin/issues"
   },
-  "homepage": "https://github.com/aquid/loopback-reset-password-mixin#readme",
-  "dependencies": {
-    "aws-sdk": "^2.162.0",
-    "nodemailer": "^4.4.0"
-  }
+  "homepage": "https://github.com/aquid/loopback-reset-password-mixin#readme"
 }
