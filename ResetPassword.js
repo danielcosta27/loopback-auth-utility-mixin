@@ -81,7 +81,7 @@ module.exports = function (Model, options) {
         var settings = Model.app.settings;
         var Email = Model.app.models.Email;
 
-        var html = 'Click on <a href="' + settings.protocol + '://' + settings.host + ':' + settings.port + '/confirm-password-reset?access_token=' + info.accessToken.id + '">this</a> url to reset your password';
+        var html = 'Click on <a href="' + settings.protocol + '://' + (settings.hostnameApp || settings.host) + ':' + settings.port + '/confirm-password-reset?access_token=' + info.accessToken.id + '">this</a> url to reset your password';
 
         Email.send({
                 from: "no-reply@knowapp.com",
